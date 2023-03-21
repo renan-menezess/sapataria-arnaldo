@@ -1,1 +1,0 @@
-# sapataria-arnaldo
