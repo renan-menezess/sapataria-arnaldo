@@ -3,32 +3,41 @@
 
 body {
     font-family: Signika Negative, sans-serif;
-    color: #A9907E
+    color: black
 }
 
   .titulo-pagina {
-    padding-left: 400px;
+    padding-left: 200px;
     font-size: 24pt;
     margin: 40px 0px 40px 0px;
-    line-height: 2;
     font-weight: bold;
   }
   .sub-titulo {
-    padding-left: 400px;
-    font-size: 15pt;
+    padding-left: 200px;
+    font-size: 18pt;
     margin: 40px 0px 40px 0px;
     line-height: 2;
   }
   .rodapé {
-    text-align: left;
+    text-align: center;
     font-size: 15pt;
-    margin: 500px 10px 40px 10px;
+    margin: 20px 0px 0px 0px;
     line-height: 2;
-    font-weight: bold;
+    background: #675D50;
+    background-clip: content-box;
+    font-family: Signika Negative, sans-serif;
+    color: white
   }
   .titulo-contato {
     text-align: left;
-    font-size: 24pt;
+    font-size: 20pt;
+    margin: 10px 10px 10px 10px;
+    line-height: 2;
+    font-weight: bold;
+  }
+  .sub-contato {
+    text-align: left;
+    font-size: 14pt;
     margin: 10px 10px 10px 10px;
     line-height: 2;
     font-weight: bold;
@@ -46,6 +55,10 @@ body {
     margin: 10px 10px 10px 10px;
     line-height: 2;
     font-weight: normal;
+  }
+  .menu-navegacao {
+    width: 80%;
+    margin: auto;
   }
   .menu-navegacao ul {
     display: flex;
@@ -71,4 +84,41 @@ body {
     margin: 40px 40px 40px 40px;
     width: 100px;
     height: 100px;
+  }
+
+  .secao-contato {
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+  .formulario-contato {
+    width: 60%;
+  }
+  
+  .formulario-contato label {
+    width: 100%;
+    display: block;
+  }
+  .formulario-contato input, .formulario-contato textarea {
+  width: 100%;
+  }
+
+  @media screen and (max-widht: 600px) {
+    .menu-navegacao, .titulo-pagina, .sub-titulo, .titulo-contato, .sub-contato, main, .formulario-contato {
+      width: 100%;
+    }
+    .titulo-pagina {
+      margin: 10px 0;
+    }
+    .titulo-contato {
+     margin: 10px 0;
+    }
+    
+    @media screen and (max-width: 380px) {
+      .menu-navegacao ul li, .rodapé{
+        padding: 10px;
+      }
+    }
   }
