@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="style.css">
     <nav class="navegation-menu">
     <ul>
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="sobre-nos.html"> Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="main-menu-link"><a href="index.html"> Home</a></li>
+        <li class="main-menu-link"><a href="sobre-nos.html"> Sobre Nós</a></li>
+        <li class="main-menu-link"><a href="contato.html">Contato</a></li>
+        <li class="main-menu-link"><a href="catalogo.html">Catálogo</a></li>
     </ul>
     </nav>
 
@@ -28,47 +28,54 @@
     <main>
         <section class="contact-section">
         <form class="contact-form" action=""method="" >
-            <label for="name">Nome:</label>
-            <input type="text" name="name">
+
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" autofocus required>
 
             <label for="email">Email:</label>
-            <input type="email" name="email">
+            <input type="email" id="email" name="email" required>
             
             <label for="assunto">Assunto:</label>
-            <input type="text" name="assunto">
+            <select id="assunto" name="assunto" required>   
+            <option value="Prazo de Entrega">Prazo de Entrega</option> 
+            <option value="Orçamento">Orçamento</option> 
+            <option value="Pagamento">Pagamento</option> 
+            <option value="Outro">Outro</option> 
+            </select>
+
 
             <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" rows="4" cols="50"></textarea>
+            <textarea id="mensagem" name="mensagem"></textarea>
 
             <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone">
+            <input id="telefone" type="tel" name="telefone">
 
-            <button>Enviar</button>
+            <button class="button">Enviar</button>
 
         </form>
               <aside class="additional-information">
 
-              <div class="imagem-local">
-                 <img src="">
+              <div class="address-image">
+                 <img src="./img/sapataria-local.jpeg" alt="Imagem do local" class="address-image">
               </div>
 
               <div class="informações-local">
 
-                <div class="horario-atendimento">
-                <h3>Horário de funcionamento</h3>
+                <div class="horario-abertura">
+                <h3 class="opening-hours">Horário de funcionamento</h3>
                 <p>De Segunda a Sexta</p>
                 <p>Das 08h às 18h</p>
                 <p>Sábado</p>
                 <p>Das 08h às 12h</p>
                 </div>
-                <div class="links-sociais">
+                <div class="social-links">
                    <a href="#instagram">
-                    <img src="icone-insta.png"
-                    alt="Icone do Insta">
+                    <img src="./img/instagram-icon.png"
+                    alt="Icone do Insta" class="images-social">
                     </a>
                     <a href="#Facebook">
-                        <img src="icone-face.png"
-                        alt="Icone do Facebook">
+                        <img src="./img/facebook-icon.png"
+                        alt="Icone do Facebook" class="images-social">
                         </a>
                 </div>
               </div>
