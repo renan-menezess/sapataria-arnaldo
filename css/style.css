@@ -20,17 +20,24 @@ body {
   .title-page {
     margin: 40px auto 10px;
     padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     width: 80%;
     font-size: 24pt;
-    font-weight: 700;
+    font-weight: 800;
     background: var(--main-color);
   }
 
   .sub-title {
     margin: 10px auto 10px;
     padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     width: 80%;
     font-size: 20pt;
+    font-weight: 600;
     background: var(--main-color);
     text-align: center;
   }
@@ -50,7 +57,7 @@ body {
     text-align: center;
     font-size: 15pt;
     margin: 20px 0px 0px 0px;
-    line-height: 2;
+    line-height: 1.5;
     background: var(--main-color);
     background-clip: content-box;
     font-family: Signika Negative, sans-serif;
@@ -81,6 +88,7 @@ body {
 
   .opening-hours {
     font-weight: 600;
+    margin: 10px 10px 20px 0px;
   }
 
   .text {
@@ -146,15 +154,20 @@ body {
   }
 
   .address-image {
-    width: 100%;
+    width: 80%;
+    margin: 0px 0px 15px 0px;
   }
  
   .additional-information {
     width: 30%;
   }
 
+  .contact-form input, .contact-form textarea, .contact-form select, .contact-form button {
+   box-sizing: border-box;
+  }
+
   select {
-     width: calc(100% + 8px);
+     width: 100%;
      line-height: 2;
      margin: 5px 0;
   }
@@ -175,13 +188,18 @@ body {
 
   .contact-form textarea {
     resize: none;
+    height: 4rem;
   }
 
-  .button {
-    width: calc(100% + 8px);
+  button {
+    width: 100%;
     line-height: 1.5;
     margin: 10px 0;
+    box-shadow: #2e2e2e 2px 2px 2px;
+    border-radius: 2px;
+    border: none;
   }
+
 
   @media screen and (max-widht: 600px) {
     .navegation-menu, .title-page, .sub-title, .sub-text, .title-contact, .sub-contact, main, .contact-form {

@@ -25,9 +25,10 @@
         <h1 class="title-contact">Contato</h1>
         <h2 class="sub-contact">Entre em contato conosco.</h2>
     </header>
+
     <main>
         <section class="contact-section">
-        <form class="contact-form" action=""method="" >
+        <form class="contact-form" action=""method="" onsubmit="alert('Formulário Enviado!')">
 
             <label for="name">Nome Completo:</label>
             <input type="text" id="name" name="name" autofocus required>
@@ -35,20 +36,19 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="assunto">Assunto:</label>
-            <select id="assunto" name="assunto" required>   
+            <label for="subject">Assunto:</label>
+            <select id="subject" name="subject" required>   
             <option value="Prazo de Entrega">Prazo de Entrega</option> 
             <option value="Orçamento">Orçamento</option> 
             <option value="Pagamento">Pagamento</option> 
             <option value="Outro">Outro</option> 
             </select>
 
+            <label for="mensage">Mensagem:</label>
+            <textarea id="mensage" name="mensage"></textarea>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
-
-            <label for="telefone">Telefone:</label>
-            <input id="telefone" type="tel" name="telefone">
+            <label for="phone">Telefone:</label>
+            <input id="phone" type="tel" name="phone">
 
             <button class="button">Enviar</button>
 
@@ -87,6 +87,7 @@
                       </section>
     </main>
         
+    
     <footer class="baseboard">
         <p>Rua Forte do Leme, 52</p> 
         <p>Jardim Santa Adélia</p> 
