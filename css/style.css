@@ -64,7 +64,7 @@ body {
     text-align: center;
     font-size: 15pt;
     margin: 20px 0px 0px 0px;
-    line-height: 1.5;
+    line-height: 2;
     background: var(--main-color);
     background-clip: content-box;
     font-family: Signika Negative, sans-serif;
@@ -118,6 +118,7 @@ body {
     width: 100%;
     font-size: 15pt;
     margin: auto;
+    line-height: 1;
     background: var(--main-color);
   }
 
@@ -131,10 +132,11 @@ body {
   }
 
   .images-products {
-    padding-left: 150px;
-    margin: 10px 10px 10px 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 10%;
-    height: 10%;
+    object-fit: cover;
   }
 
   .banner {
@@ -146,7 +148,7 @@ body {
 
   .images {
     margin: 10px 10px 10px 10px;
-    width: 25%;
+    width: 15%;
     height: 10%;
     object-fit: cover;
     display: block;
@@ -154,10 +156,23 @@ body {
     margin-right: auto;
   }
   .logo-image {
-    width: 4%;
-    height: 10%;
+    width: 5%;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  .logo-image-baseboard {
+    /*width: 10%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+    display: block;*/
+    margin: 10px 10px 10px 10px;
+    width: 10%;
     object-fit: cover;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /*.logo-imagee {
@@ -177,6 +192,36 @@ body {
     object-fit: cover;
     display: block;
   }
+  
+  div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 15%;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 50%;
+    height: auto;
+  }
+
+  div.desc {
+    text-align: center;
+    color: var(--title-menu);
+    margin: 10px auto 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 80%;
+    height: auto;
+    font-size: 14pt;
+    font-weight: 500;
+    background: var(--main-color);
+  } 
 
   .address-image {
     width: 80%;
@@ -236,7 +281,7 @@ body {
 
 
   @media screen and (max-widht: 600px) {
-    .navegation-menu, .title-page, .sub-title, .sub-text, .title-contact, .sub-contact, main, .contact-form {
+    .navegation-menu, .title-page, .sub-title, .sub-text, .title-contact, .sub-contact, main, .contact-form, .gallery, .desc {
       width: 100%;
     }
     .title-page {
