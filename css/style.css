@@ -10,12 +10,17 @@
 
 body {
     font-family: Signika Negative, sans-serif;
-    color: #ffffff
+    color: #000000
 }
 
    main{
     margin: auto;
     width: 80%;
+   }
+
+   p.intro::first-letter {
+    color: var(--title-color);
+    font-size: 200%;
    }
 
   .title-page {
@@ -28,6 +33,7 @@ body {
     font-size: 24pt;
     font-weight: 800;
     text-align: center;
+    color: var(--title-menu);
     background: var(--main-color);
   }
 
@@ -42,11 +48,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
-    width: 80%;
+    width: 50%;
     font-size: 18pt;
     font-weight: 600;
     background: var(--main-color);
     text-align: center;
+    color: var(--title-menu);
   }
 
   .sub-text-title {
@@ -106,6 +113,15 @@ body {
     font-weight: normal;
   }
 
+  .text-about-us {
+    text-align: center;
+    font-size: 20pt;
+    margin: auto;
+    line-height: 1;
+    font-weight: normal;
+    color:var(--font-color);
+  }
+
   .text-contact {
     text-align: left;
     font-size: 15pt;
@@ -158,6 +174,7 @@ body {
   .logo-image {
     width: 5%;
     height: 70px;
+    display: flex;
     object-fit: cover;
   }
 
@@ -187,41 +204,78 @@ body {
 
   .images-social {
     margin: 10px 0px 10px 0px;
-    width: 10%;
+    width: 30%;
     height: 10%;
     object-fit: cover;
     display: block;
   }
+  .catalog-products {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-color);
+  }
+
+  .image-catalog {
+    width: 50%;
+    height: 10%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    border: 3px solid #444444;
+  }
   
   div.gallery {
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     border: 1px solid #ccc;
-    width: 15%;
+    width: 50%;
   }
 
   div.gallery:hover {
     border: 1px solid #777;
+    margin: auto;
   }
 
   div.gallery img {
-    width: 50%;
+    width: 30%;
     height: auto;
   }
 
-  div.desc {
+  div.desc-catalogo {
     text-align: center;
     color: var(--title-menu);
     margin: 10px auto 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: 80%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: auto;
     height: auto;
-    font-size: 14pt;
-    font-weight: 500;
+    font-size: 12pt;
+    font-weight: 100;
     background: var(--main-color);
   } 
+
+  div.desc-catalogo-info {
+    text-align: center;
+    color: var(--title-menu);
+    margin: 10px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    width: auto;
+    height: auto;
+    font-size: 15pt;
+    font-weight: 500;
+    background: var(--main-color);
+    display: flex;
+    border: 1px solid #777;
+  }
 
   .address-image {
     width: 80%;
@@ -281,7 +335,7 @@ body {
 
 
   @media screen and (max-widht: 600px) {
-    .navegation-menu, .title-page, .sub-title, .sub-text, .title-contact, .sub-contact, main, .contact-form, .gallery, .desc {
+    .navegation-menu, .title-page, .sub-title, .sub-text, .title-contact, .sub-contact, main, .contact-form, div.gallery, .div.desc-catalogo {
       width: 100%;
     }
     .title-page {
